@@ -1,10 +1,15 @@
 package main
 
 import (
-	"exercism.org/luhn"
+	"exercism.org/clock"
+	"exercism.org/isogram"
 	"fmt"
 )
 
 func main() {
-	fmt.Println(luhn.Valid("055b 444 285"))
+
+	fmt.Println(clock.New(23, 59).Add(2))
+
+	fmt.Println(isogram.IsIsogram("АБВГДа"))
+
 }
